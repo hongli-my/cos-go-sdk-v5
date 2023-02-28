@@ -60,6 +60,7 @@ type BucketPutOptions struct {
 	XCosGrantReadACP          string                     `header:"x-cos-grant-read-acp,omitempty" url:"-" xml:"-"`
 	XCosGrantWriteACP         string                     `header:"x-cos-grant-write-acp,omitempty" url:"-" xml:"-"`
 	CreateBucketConfiguration *CreateBucketConfiguration `header:"-" url:"-" xml:"-"`
+    XCosTagging               string                     `header:"x-cos-tagging,omitempty"`
 }
 type CreateBucketConfiguration struct {
 	XMLName          xml.Name `xml:"CreateBucketConfiguration"`
